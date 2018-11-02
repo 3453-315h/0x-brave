@@ -1,0 +1,9 @@
+<script>
+    window.onclick = function () {
+        x = window.open('https://www.google.com/csi');
+        setTimeout(function () {
+            x.document.write(
+                `I am not a www.google.com;<button onclick="location.reload();">click me</button>`)
+        }, 1000);
+    }
+</script>

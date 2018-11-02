@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PCSettings>
+  <SearchableContent xmlns="http://schemas.microsoft.com/Search/2013/SettingContent">
+    <ApplicationInformation>
+      <AppID>windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel</AppID>
+      <DeepLink>C:\Windows\system32\calc.exe</DeepLink>
+      <Icon>C:\Windows\system32\calc.exe</Icon>
+    </ApplicationInformation>
+    <SettingIdentity>
+      <PageID></PageID>
+      <HostID>{12B1697E-D3A0-4DBC-B568-CCF64A3F934D}</HostID>
+    </SettingIdentity>
+    <SettingInformation>
+      <Description>Only</Description>
+      <Keywords>for Brave</Keywords>
+    </SettingInformation>
+  </SearchableContent>
+</PCSettings>
