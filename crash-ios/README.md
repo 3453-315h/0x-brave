@@ -1,12 +1,12 @@
 # DoS in Brave for iOS
 
-> Metnew: was this crash exploitable? I don't know
+> Metnew: was this crash exploitable? I don't know, but seems yes:  `0x000000010172f63c` - crash address. I didn't have much interest to investigate this crash for 80$.
 
 ## Summary
 
 Attacker could initiate DoS during the page load.
 
-## Products affected:
+## Products affected
 
 1.6 (18.05.17.13)
 Device iPhone 6s (iOS 11.3.1)

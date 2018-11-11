@@ -1,5 +1,7 @@
 # Navigation to internal pages from the web
 
+> Additionally, check `Torrent extension: Cross-origin downloading + "URL spoofing" + CSP-blocked XSS` and ""
+
 ## Summary
 
 `http` and `https` pages are [disallowed from navigating](https://github.com/brave/muon/blob/master/atom/browser/extensions/atom_browser_client_extensions_part.cc#L289-L296) to `chrome-extension`.  However, `ftp` protocol isn't checked. Pages from `ftp:///` and `file:///` origin could navigate to `chrome-extension://` origin.

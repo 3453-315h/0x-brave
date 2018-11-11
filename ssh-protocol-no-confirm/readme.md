@@ -1,5 +1,8 @@
 # Unsafe handling of protocol handlers
 
+> Link:          https://hackerone.com/reports/369185
+> Date:          2018-06-20 14:09:09 +0000
+
 ## Summary
 
 Brave browser handles protocol handlers in unsafe way (and differently from other browsers).
@@ -14,14 +17,12 @@ Try to open a `ssh://` link in Chrome: it results in modal window with a questio
 
 Opening `ssh://` in Brave results in a popup with contents similar to : "Do you want to open external app for ssh://"
 
-> Sorry, I didn't remember actual popups' content + I've got RU version
+### Impact
 
-#### Impact
+1. User doesn't know which app will be opened after allowing to open an external app: it's easier for attacker to trick user into allowing opening an external app in Brave compared to other browsers.
+2. Deanonymization via `ssh://` and `telnet://`
 
-User doesn't know which app will be opened after allowing to open an external app.
-That means it easier for attacker to trick user into allowing opening an external app in Brave compared to other browsers.
-
-### ssh:// and telnet:// without additional questions
+### ssh:// and telnet:// without confirm
 
 In Chrome/Safari/FF, after allowing to open Terminal, Terminal shows an alert with a text similar to "Do you want to initiate ssh session with **example.com*".
 Next things worth noting:
